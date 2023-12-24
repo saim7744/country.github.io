@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(56, 56, 255);
+}
+
+.container {
+    background-color: #ffffff;
+    width: 80vw;
+    max-width: 600px; /* 37.5em * 16px = 600px */
+    padding: 48px 40px; /* 3em * 16px = 48px, 2.5em * 16px = 40px */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 9.92px; /* 0.62em * 16px = 9.92px */
+    box-shadow: 0 20px 28.8px rgba(8, 21, 65, 0.25); /* 1.25em * 16px = 20px, 1.8em * 16px = 28.8px */
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 20px; /* 1.25em * 16px = 20px */
+}
+
+.search-wrapper button {
+    font-size: 16px;
+    background-color: #3d64e6;
+    color: #ffffff;
+    padding: 12.8px 0; /* 0.8em * 16px = 12.8px */
+    border: none;
+    border-radius: 24px; /* 1.5em * 16px = 24px */
+}
+
+.search-wrapper input {
+    font-size: 16px;
+    padding: 9.92px 9.92px; /* 0.62em * 16px = 9.92px */
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    color: #222a43;
+}
+
+#result {
+    margin-top: 20px; /* 1.25em * 16px = 20px */
+}
+
+.container .flag-img {
+    display: block;
+    width: 45%;
+    min-width: 120px; /* 7.5em * 16px = 120px */
+    margin: 28.8px auto 19.2px auto; /* 1.8em * 16px = 28.8px, 1.2em * 16px = 19.2px */
+}
+
+.container h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 32px; /* 2px * 16px = 32px */
+    margin-bottom: 28.8px; /* 1.8em * 16px = 28.8px */
+}
+
+.data-wrapper {
+    margin-bottom: 16px; /* 1em * 16px = 16px */
+    letter-spacing: 0.3px;
+}
+
+.container h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+}
+
+.container span {
+    color: #5d6274;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 19.2px; /* 1.2em * 16px = 19.2px */
+    font-weight: 400;
+    color: #ff465a;
+}
+
+/* Existing styles remain unchanged */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90vw;
+        max-width: none;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: 0 12px 18px rgba(8, 21, 65, 0.25);
+    }
+
+    .search-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .search-wrapper button {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .search-wrapper input {
+        width: 100%;
+    }
+
+    .container .flag-img {
+        width: 100%;
+        margin: 16px auto;
+    }
+
+    .container h2 {
+        letter-spacing: 16px;
+        margin-bottom: 16px;
+    }
+}
